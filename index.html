@@ -24,7 +24,8 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
         <div class="d-flex align-items-center">
-          <button class="btn btn-success me-2">Create a new post</button>
+          <button type="button" class="btn btn-success me-2" data-bs-toggle="modal"
+          data-bs-target="#exampleModal">Create a new post</button>
           <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
               data-bs-toggle="dropdown" aria-expanded="false">
@@ -45,42 +46,95 @@
     </nav>
 
     <div class="text-center py-3">
-      <a href="grid.html"><i class="fa-solid fa-table-cells me-2"></i></a>
-      <a href="index.html"><i class="fa-solid fa-square"></i></a>
-    </div>
-
-    <div class="container-fluid d-flex flex-column align-items-center pb-4 gap-4">
-      <article class="post border border-1 rounded mx-auto px-0">
-        <div class="d-flex justify-content-between py-2 px-3 align-items-center">
-          <h2 class="fs-5 mb-0">My Crazy dog Spark!</h2>
-          <small class="text-muted">08/26</small>
+      <ul class="nav nav-pills justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-table-cells me-2"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+          <div class="container-fluid d-flex flex-column align-items-center pb-4 gap-4">
+            <article class="post border border-1 rounded mx-auto px-0">
+              <div class="d-flex justify-content-between py-2 px-2 align-items-center">
+                <h2 class="fs-5 mb-0">My Crazy dog Spark!</h2>
+                <small class="text-muted">08/26</small>
+              </div>
+              <img src="https://placecats.com/neo/1080/1350" class="img-fluid" alt="Meaow" />
+              <p class="px-2 pt-2 mb-1  text-start"><strong>218 Likes</strong></p>
+              <p class="px-2  text-start">This is an example of a very good photo that you can post on instagram</p>
+            </article>
+            <article class="post border border-1 rounded mx-auto px-0">
+              <div class="d-flex justify-content-between py-2 px-2 align-items-center">
+                <h2 class="fs-5 mb-0 ">Morbi vel nibh vitae</h2>
+                <small class="text-muted">07/30</small>
+              </div>
+              <img src="https://placecats.com/millie/1080/1350" class="img-fluid" alt="Meaow" />
+              <p class="px-2 pt-2 mb-1  text-start"><strong>498 Likes</strong></p>
+              <p class="px-2  text-start">Quisque ut elit vel arcu consequat placerat sed ut est. In imperdiet nibh non justo pellentesque
+                aliquam.</p>
+            </article>
+            <article class="post border border-1 rounded mx-auto px-0">
+              <div class="d-flex justify-content-between py-2 px-2 align-items-center">
+                <h2 class="fs-5 mb-0">Velit interdum</h2>
+                <small class="text-muted">10/90</small>
+              </div>
+              <img src="https://placecats.com/1080/1350" class="img-fluid" alt="Meaow" />
+              <p class="px-2 pt-2 mb-1  text-start"><strong>100 Likes</strong></p>
+              <p class="px-2  text-start">Donec at velit commodo, lacinia felis id, mollis massa. Sed vel dictum sem, ullamcorper volutpat
+                ante.</p>
+            </article>
+          </div>
         </div>
-        <img src="https://placecats.com/neo/1080/1350" class="img-fluid" alt="Meaow" />
-        <p class="px-2 pt-2 mb-1"><strong>218 Likes</strong></p>
-        <p class="px-2">This is an example of a very good photo that you can post on instagram</p>
-      </article>
-      <article class="post border border-1 rounded mx-auto px-0">
-        <div class="d-flex justify-content-between py-2 px-3 align-items-center">
-          <h2 class="fs-5 mb-0">Morbi vel nibh vitae</h2>
-          <small class="text-muted">07/30</small>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          <div class="container-fluid">
+            <div class="grid-layout d-grid gap-2 pb-4">
+              <img src="https://placecats.com/neo/1080/1080" class="img-fluid" alt="Kitten 1">
+              <img src="https://placecats.com/millie/1080/1080" class="img-fluid" alt="Kitten 2">
+              <img src="https://placecats.com/neo_banana/1080/1080" class="img-fluid" alt="Kitten 3">
+              <img src="https://placecats.com/neo_2/1080/1080" class="img-fluid" alt="Kitten 4">
+              <img src="https://placecats.com/bella/1080/1080" class="img-fluid" alt="Kitten 5">
+              <img src="https://placecats.com/g/1080/1080" class="img-fluid" alt="Kitten 6">
+              <img src="https://placecats.com/neo/1080/1080" class="img-fluid" alt="Kitten 7">
+              <img src="https://placecats.com/millie/1080/1080" class="img-fluid" alt="Kitten 8">
+              <img src="https://placecats.com/neo_banana/1080/1080" class="img-fluid" alt="Kitten 9">
+            </div>
+          </div>
         </div>
-        <img src="https://placecats.com/millie/1080/1350" class="img-fluid" alt="Meaow" />
-        <p class="px-2 pt-2 mb-1"><strong>498 Likes</strong></p>
-        <p class="px-2">Quisque ut elit vel arcu consequat placerat sed ut est. In imperdiet nibh non justo pellentesque
-          aliquam..</p>
-      </article>
-      <article class="post border border-1 rounded mx-auto px-0">
-        <div class="d-flex justify-content-between py-2 px-3 align-items-center">
-          <h2 class="fs-5 mb-0">Velit interdum</h2>
-          <small class="text-muted">10/90</small>
-        </div>
-        <img src="https://placecats.com/1080/1350" class="img-fluid" alt="Meaow" />
-        <p class="px-2 pt-2 mb-1"><strong>100 Likes</strong></p>
-        <p class="px-2">Donec at velit commodo, lacinia felis id, mollis massa. Sed vel dictum sem, ullamcorper volutpat
-          ante.</p>
-      </article>
+      </div>
     </div>
   </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6>Caption:</h6>
+                <textarea class="form-control" placeholder="Add the caption of your post here"
+                    id="floatingTextarea2"></textarea>
+                <div class="row p-2">
+                    <button class="col-1 border rounded p-1 m-1 btn-light">
+                        <i class="fa-solid fa-camera"></i>
+                    </button>
+                    <button class="col-1 border rounded p-1 m-1 btn-light">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Publish</button>
+            </div>
+        </div>
+    </div>
+</div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"

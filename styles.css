@@ -16,3 +16,9 @@ body {
 .grid-layout {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: blue;
+  background-color: white;
+}
