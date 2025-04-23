@@ -1,0 +1,18 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+.post {
+  max-width: 468px;
+}
+.grid-layout {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
